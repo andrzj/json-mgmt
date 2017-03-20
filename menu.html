@@ -1,0 +1,68 @@
+﻿<HTML>
+
+<HEAD>
+    <title>JSON Administration</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+</HEAD>
+
+<BODY>
+    <div class="head clearfix">
+        <h1>Administração do Menu</h1>
+    </div>
+
+    <div class="menu clearfix">
+        <div style="float:left; text-align:center;">
+            <a href="#" onclick="saveMenu()"><img src="img/004-save.png"></a><br>
+            <span>Salvar</span>
+        </div>
+        <div style="float:left; text-align:center;">
+            <a href="#" onclick="publishMenu()"><img src="img/001-internet.png"></a><br>
+            <span>Publicar</span>
+        </div>
+    </div>
+    <div id="main">
+    </div>
+    <div id="dialog-form" title="Criar novo ítem de menu" style="display: none;">
+        <p class="validateTips"></p>
+        <form>
+            <fieldset>
+                <p>
+                    <label for="name">Nome SEO</label>
+                    <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all">
+                </p>
+                <p>
+                    <label for="label">Label</label>
+                    <input type="text" name="label" id="label" class="text ui-widget-content ui-corner-all">
+                </p>
+                <p>
+                    <label for="label-menu">Label menu</label>
+                    <input type="text" name="label-menu" id="label-menu" class="text ui-widget-content ui-corner-all">
+                </p>
+                <p>
+                    <label for="class_extra">Classe</label>
+                    <input type="text" name="class_extra" id="class_extra" class="text ui-widget-content ui-corner-all">
+                </p>
+                <p>
+                    <label for="target">Target</label>
+                    <input type="text" name="target" id="target" class="text ui-widget-content ui-corner-all">
+                </p>
+                <p>
+                    <label for="link">Link</label>
+                    <input type="text" name="link" id="link" class="text ui-widget-content ui-corner-all">
+                </p>
+
+                <!-- Allow form submission with keyboard without duplicating the dialog button -->
+                <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+            </fieldset>
+        </form>
+    </div>
+</BODY>
+
+</HTML>

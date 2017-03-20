@@ -1,0 +1,50 @@
+        form label,
+        form input {
+            font-size: 14px!important
+        }
+        
+        form label {
+            width: 95px;
+            display: inline-block;
+        }
+        
+        .menu {
+            background-color: #e5e5e5;
+            padding: 20px 0 20px 20px;
+            font-family: arial;
+            font-weight: bold;
+            margin-bottom: 10px
+        }
+        
+        .menu img {
+            width: 60px;
+        }
+        
+        .menu div {
+            margin-right: 20px;
+        }
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .head img {
+            float: left
+        }
+        
+        .head h1 {
+            float: left;
+            font-family: arial;
+            color: #FFF;
+            margin-left: 40px;
+        }
+        
+        .head {
+            width: auto;
+            background-color: #006393;
+            min-height: 100px;
+            padding: 15px 0 0 40px;
+            margin-bottom: 10px
+        }
